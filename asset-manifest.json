@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/product-catalog-app/static/css/main.ffa8a96a.css",
-    "main.js": "/product-catalog-app/static/js/main.1cb15e4d.js",
+    "main.css": "/product-catalog-app/static/css/main.668ac018.css",
+    "main.js": "/product-catalog-app/static/js/main.3838e4a0.js",
     "static/media/iphone_15_pro.jpg": "/product-catalog-app/static/media/iphone_15_pro.c1751662cc3d8c7eaa4b.jpg",
     "static/media/DELL_XPS_15.jpg": "/product-catalog-app/static/media/DELL_XPS_15.af3cf7f5fde73142a584.jpg",
     "static/media/Sony_WH_1000xm5.jpg": "/product-catalog-app/static/media/Sony_WH_1000xm5.817adf0ecee11415cb8b.jpg",
@@ -11,11 +11,11 @@
     "static/media/logitech_mx_master_3s.jpg": "/product-catalog-app/static/media/logitech_mx_master_3s.b09c955c8c2615ff46c1.jpg",
     "static/media/MacBook_Pro_M3.jpg": "/product-catalog-app/static/media/MacBook_Pro_M3.2b01004c78848a034070.jpg",
     "index.html": "/product-catalog-app/index.html",
-    "main.ffa8a96a.css.map": "/product-catalog-app/static/css/main.ffa8a96a.css.map",
-    "main.1cb15e4d.js.map": "/product-catalog-app/static/js/main.1cb15e4d.js.map"
+    "main.668ac018.css.map": "/product-catalog-app/static/css/main.668ac018.css.map",
+    "main.3838e4a0.js.map": "/product-catalog-app/static/js/main.3838e4a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.ffa8a96a.css",
-    "static/js/main.1cb15e4d.js"
+    "static/css/main.668ac018.css",
+    "static/js/main.3838e4a0.js"
   ]
 }
