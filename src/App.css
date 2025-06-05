@@ -1,0 +1,72 @@
+.catalog {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.catalog-header { /* Renamed from h1 style for clarity if needed */
+  text-align: center;
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-wrap: wrap; /* For responsiveness */
+  gap: 15px; /* Space between items when wrapped */
+}
+
+.controls input[type="text"] {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1;
+  min-width: 200px; /* Minimum width for search input */
+}
+
+.controls select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px; /* Minimum width for select */
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center cards if not filling the row */
+  gap: 16px; /* Adjust gap as needed, replaces individual margins for layout */
+}
+
+.no-products-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 50px;
+}
+
+/* Responsive adjustments for controls */
+@media (max-width: 600px) {
+  .controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .controls input[type="text"],
+  .controls select {
+    width: 100%; /* Make inputs full width on small screens */
+    margin-bottom: 10px; /* Add some space between stacked controls */
+  }
+  .controls select {
+    margin-bottom: 0; /* No bottom margin for the last element */
+  }
+}

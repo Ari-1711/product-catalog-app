@@ -1,0 +1,111 @@
+/* Container utama untuk seluruh katalog */
+.catalog-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 20px auto; /* Memberi sedikit ruang di atas dan tengah */
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Header utama katalog */
+.catalog-header {
+  text-align: center;
+  color: #333;
+  font-size: 2.5em; /* Ukuran font lebih besar */
+  margin-bottom: 30px;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #eee; /* Garis bawah halus */
+}
+
+/* Area kontrol yang berisi input pencarian dan filter kategori */
+.catalog-controls {
+  display: flex;
+  justify-content: space-between; /* Menyebarkan item dengan ruang di antaranya */
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  flex-wrap: wrap; /* Memungkinkan item membungkus pada layar kecil */
+  gap: 15px; /* Jarak antar item kontrol */
+}
+
+/* Input untuk pencarian produk */
+.search-input {
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  flex-grow: 1; /* Memungkinkan input pencarian tumbuh mengisi ruang */
+  min-width: 250px; /* Lebar minimum untuk input pencarian */
+  box-sizing: border-box; /* Agar padding tidak menambah lebar total */
+}
+
+.search-input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Dropdown untuk filter kategori */
+.category-select {
+  padding: 12px 15px;
+  font-size: 1em;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background-color: #fff;
+  min-width: 200px; /* Lebar minimum untuk dropdown */
+  box-sizing: border-box;
+}
+
+.category-select:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+/* Container untuk daftar produk (tempat ProductCard akan ditampilkan) */
+.product-list-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Memusatkan kartu jika tidak mengisi baris penuh */
+  gap: 20px; /* Jarak antar ProductCard */
+  padding-top: 10px; /* Sedikit ruang di atas daftar produk */
+}
+
+/* Pesan yang ditampilkan jika tidak ada produk yang ditemukan */
+.no-products-message {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px dashed #ddd;
+}
+
+/* Penyesuaian untuk layar yang lebih kecil (responsif) */
+@media (max-width: 768px) {
+  .catalog-header {
+    font-size: 2em;
+  }
+
+  .catalog-controls {
+    flex-direction: column; /* Menumpuk item kontrol secara vertikal */
+    align-items: stretch; /* Membuat item kontrol meregang selebar kontainer */
+  }
+
+  .search-input,
+  .category-select {
+    width: 100%; /* Lebar penuh untuk input dan select di layar kecil */
+    margin-bottom: 15px; /* Jarak antar item yang ditumpuk */
+  }
+
+  .category-select {
+    margin-bottom: 0; /* Hapus margin bawah untuk item terakhir */
+  }
+}

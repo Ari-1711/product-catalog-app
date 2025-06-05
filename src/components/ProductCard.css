@@ -1,0 +1,48 @@
+.product-card {
+  border: 1px solid #eee;
+  border-radius: 8px;
+  padding: 16px;
+  /* margin: 16px; Remove margin if using gap in parent */
+  width: 250px; /* Fixed width, or use flex-basis for responsiveness */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color: #fff;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 12px;
+}
+
+.product-card h3 {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin: 8px 0;
+  color: #333;
+}
+
+.product-card .price {
+  color: #007bff;
+  font-size: 1.1em;
+  margin: 4px 0;
+  font-weight: bold;
+}
+
+.product-card .category {
+  font-size: 0.9em;
+  color: #6c757d;
+  font-style: italic;
+  margin-top: auto; /* Pushes category to the bottom if card heights vary due to name length */
+}
