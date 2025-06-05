@@ -1,7 +1,7 @@
 // src/ShoppingCartPage.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from './context/CartContext'; // Sesuaikan path jika perlu
+import { useCart } from '../context/CartContext'; // Sesuaikan path jika perlu
 import './ShoppingCartPage.css'; // Kita akan buat file CSS ini
 
 function ShoppingCartPage() {
