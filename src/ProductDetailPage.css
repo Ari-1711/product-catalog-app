@@ -1,0 +1,167 @@
+.product-detail-container {
+  max-width: 1000px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.product-detail-container.error-page {
+  text-align: center;
+  padding: 40px;
+}
+
+.back-to-catalog-link {
+  display: inline-block;
+  margin-bottom: 25px;
+  color: #007bff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.2s ease;
+}
+
+.back-to-catalog-link.button-like { /* Tambahan untuk membuatnya seperti tombol */
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+}
+
+.back-to-catalog-link:hover {
+  text-decoration: underline;
+  background-color: #e9ecef;
+}
+
+.product-detail-content {
+  display: flex;
+  gap: 30px; /* Jarak antara gambar dan info */
+}
+
+.product-detail-image-container {
+  flex: 1; /* Biarkan gambar mengambil ruang yang tersedia */
+  max-width: 400px; /* Batasi lebar maksimum gambar */
+  text-align: center; /* Memusatkan gambar jika lebih kecil dari kontainer */
+}
+
+.product-detail-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid #eee;
+  object-fit: contain; /* Agar gambar tidak terpotong dan tetap proporsional */
+  max-height: 400px; /* Batasi tinggi maksimum gambar */
+}
+
+.product-detail-info {
+  flex: 1.5; /* Beri lebih banyak ruang untuk info teks */
+  display: flex;
+  flex-direction: column;
+}
+
+.product-detail-name {
+  font-size: 2.2em;
+  color: #333;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.product-detail-category {
+  font-size: 0.9em;
+  color: #777;
+  margin-bottom: 15px;
+  background-color: #e9ecef;
+  padding: 5px 10px;
+  border-radius: 4px;
+  align-self: flex-start; /* Agar background tidak selebar kontainer */
+}
+
+.product-detail-price {
+  font-size: 1.8em;
+  color: #007bff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.specs-section {
+  margin-bottom: 25px;
+  padding-top: 15px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.specs-section h3 {
+  font-size: 1.3em;
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.spec-line {
+  margin: 5px 0;
+  line-height: 1.6;
+  color: #555;
+}
+
+.specs-list {
+  list-style-type: none;
+  padding-left: 0;
+  color: #555;
+}
+
+.spec-item {
+  margin-bottom: 8px;
+  display: flex;
+  line-height: 1.6;
+}
+
+.spec-key {
+  font-weight: 600;
+  color: #333;
+  min-width: 120px; /* Agar titik dua sejajar */
+  margin-right: 10px;
+}
+
+.spec-value {
+  flex-grow: 1;
+}
+
+.add-to-cart-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.1em;
+  font-weight: bold;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: auto; /* Mendorong tombol ke bawah jika ada ruang ekstra */
+  align-self: flex-start; /* Agar tombol tidak selebar kontainer */
+}
+
+.add-to-cart-button:hover {
+  background-color: #218838;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .product-detail-content {
+    flex-direction: column; /* Tumpuk gambar dan info secara vertikal */
+  }
+  .product-detail-image-container {
+    max-width: 100%;
+    margin-bottom: 20px;
+  }
+  .product-detail-name {
+    font-size: 1.8em;
+  }
+  .product-detail-price {
+    font-size: 1.5em;
+  }
+  .add-to-cart-button {
+    width: 100%; /* Tombol selebar kontainer di layar kecil */
+  }
+}

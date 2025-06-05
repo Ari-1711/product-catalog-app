@@ -1,18 +1,14 @@
-import React from 'react';
+ import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css'; // CSS global dasar
+import { BrowserRouter } from 'react-router-dom'; // <-- Impor BrowserRouter
+import './index.css';
 import App from './App';
-// import reportWebVitals from './reportWebVitals'; // Opsional, untuk mengukur performa
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <BrowserRouter> {/* <-- Bungkus App dengan BrowserRouter */}
+      <App />
+    </BrowserRouter>
   </React.StrictMode>
 );
-
-// Jika Anda ingin mulai mengukur performa di aplikasi Anda, Anda bisa
-// meng-uncomment baris reportWebVitals dan mengimpornya.
-// Contoh: reportWebVitals(console.log);
-// atau kirim ke endpoint analitik. Pelajari lebih lanjut: https://bit.ly/CRA-vitals
-// reportWebVitals();

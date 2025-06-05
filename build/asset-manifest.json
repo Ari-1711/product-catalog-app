@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/product-catalog-app/static/css/main.d90e1d6d.css",
+    "main.js": "/product-catalog-app/static/js/main.02d79c98.js",
+    "static/media/iphone_15_pro.jpg": "/product-catalog-app/static/media/iphone_15_pro.c1751662cc3d8c7eaa4b.jpg",
+    "static/media/DELL_XPS_15.jpg": "/product-catalog-app/static/media/DELL_XPS_15.af3cf7f5fde73142a584.jpg",
+    "static/media/Sony_WH_1000xm5.jpg": "/product-catalog-app/static/media/Sony_WH_1000xm5.817adf0ecee11415cb8b.jpg",
+    "static/media/AirPods_Pro_2.jpg": "/product-catalog-app/static/media/AirPods_Pro_2.2629eb4b516030402ba5.jpg",
+    "static/media/iPad_Air_5.jpg": "/product-catalog-app/static/media/iPad_Air_5.fc6cd40b41f5867e1ea6.jpg",
+    "static/media/kindle_paperwhite.jpg": "/product-catalog-app/static/media/kindle_paperwhite.afc5e6a201988a8dd1f0.jpg",
+    "static/media/logitech_mx_master_3s.jpg": "/product-catalog-app/static/media/logitech_mx_master_3s.b09c955c8c2615ff46c1.jpg",
+    "static/media/MacBook_Pro_M3.jpg": "/product-catalog-app/static/media/MacBook_Pro_M3.2b01004c78848a034070.jpg",
+    "index.html": "/product-catalog-app/index.html",
+    "main.d90e1d6d.css.map": "/product-catalog-app/static/css/main.d90e1d6d.css.map",
+    "main.02d79c98.js.map": "/product-catalog-app/static/js/main.02d79c98.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d90e1d6d.css",
+    "static/js/main.02d79c98.js"
+  ]
+}
