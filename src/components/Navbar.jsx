@@ -12,7 +12,7 @@ function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <Link to="/" className="navbar-logo">
-          🛍️ Toko Produk Keren
+          🛍️ 
         </Link>
         <ul className="navbar-menu">
           <li className="navbar-item">
