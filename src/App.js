@@ -99,15 +99,15 @@ function App() {
       <div className="App">
         {/* Anda bisa menambahkan Navbar di sini nanti yang menampilkan jumlah item keranjang */}
         <Routes>
-          <Route
-            path="/"
-            element={<ProductCatalog initialProducts={PRODUCTS_DATA} />}
-          />
-          <Route
-            path="/product/:productId"
-            element={<ProductDetailPage products={PRODUCTS_DATA} />} 
-            // ProductDetailPage juga bisa menggunakan useCart() jika perlu
-          />
+        <Route
+          path="/" // Ini akan menjadi /product-catalog-app/ di browser
+          element={<ProductCatalog initialProducts={PRODUCTS_DATA} />}
+        />
+        <Route
+          path="/product/:productId" // Ini akan menjadi /product-catalog-app/product/:productId
+          element={<ProductDetailPage products={PRODUCTS_DATA} />}
+        />
+
           {/* <Route path="/cart" element={<ShoppingCartPage />} />  // Rute untuk halaman keranjang nanti */}
         </Routes>
       </div>
