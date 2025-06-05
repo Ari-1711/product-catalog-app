@@ -3,7 +3,9 @@ import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ProductCatalog from './ProductCatalog';
 import ProductDetailPage from './ProductDetailPage';
-import { CartProvider } from './context/CartContext'; // <-- Impor CartProvider
+import ShoppingCartPage from './pages/ShoppingCartPage';
+import { CartProvider } from './context/CartContext';
+import Navbar from './components/Navbar'; 
 import './App.css';
 
 // ... (Impor gambar dan PRODUCTS_DATA Anda tetap sama seperti sebelumnya) ...
@@ -108,8 +110,8 @@ function App() {
           element={<ProductDetailPage products={PRODUCTS_DATA} />}
         />
 
-          {/* <Route path="/cart" element={<ShoppingCartPage />} />  // Rute untuk halaman keranjang nanti */}
-        </Routes>
+          <Route path="/cart" element={<ShoppingCartPage />} /> 
+          </Routes>
       </div>
     </CartProvider>
   );

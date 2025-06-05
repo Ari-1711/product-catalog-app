@@ -34,6 +34,9 @@ a:hover {
   text-decoration: underline;
 }
 
+.main-content {
+  padding-top: 80px; /* Sesuaikan dengan tinggi Navbar Anda */
+}
 
 /*
 Konten utama Anda (ProductCatalog, ProductDetailPage) akan dirender di dalam .App.
