@@ -99,6 +99,7 @@ function App() {
   return (
     <CartProvider> {/* <-- Bungkus dengan CartProvider di sini */}
       <div className="App">
+      <Navbar />
         {/* Anda bisa menambahkan Navbar di sini nanti yang menampilkan jumlah item keranjang */}
         <Routes>
         <Route

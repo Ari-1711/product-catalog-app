@@ -5,7 +5,8 @@ import { useCart } from '../context/CartContext'; // Sesuaikan path jika perlu
 import './Navbar.css'; // Kita akan buat file CSS ini
 
 function Navbar() {
-  const { itemCount } = useCart(); // Dapatkan jumlah item dari CartContext
+  const { itemCount } = useCart();
+   // Dapatkan jumlah item dari CartContext
 
   return (
     <nav className="navbar">
