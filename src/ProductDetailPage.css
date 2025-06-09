@@ -24,7 +24,7 @@
   transition: background-color 0.2s ease;
 }
 
-.back-to-catalog-link.button-like { /* Tambahan untuk membuatnya seperti tombol */
+.back-to-catalog-link.button-like { 
   background-color: #f0f0f0;
   border: 1px solid #ddd;
 }

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import ProductCard from './components/ProductCard';// Assuming ProductCard.jsx is in the same directory
-import PropTypes from 'prop-types'; // For PRODUCTS prop validation in this example
+import ProductCard from './components/ProductCard';
+import PropTypes from 'prop-types';
+import './ProductCatalog.css'; 
 
 const PRODUCTS = [
   { id: 1, name: "MacBook Pro M3", price: 25000000, category: "Laptop", image: "https://via.placeholder.com/200/FF0000/FFFFFF?Text=MacBook" },
@@ -12,63 +13,7 @@ const PRODUCTS = [
   { id: 7, name: "Sony WH-1000XM5", price: 4500000, category: "Audio", image: "https://via.placeholder.com/200/C0C0C0/000000?Text=SonyXM5" },
 ];
 
-// Basic styling (can be moved to a CSS file)
-const catalogStyle = {
-  fontFamily: 'Arial, sans-serif',
-  padding: '20px',
-  maxWidth: '1200px',
-  margin: '0 auto',
-};
 
-const headerStyle = {
-  textAlign: 'center',
-  color: '#333',
-  marginBottom: '30px'
-};
-
-const controlsStyle = {
-  display: 'flex',
-  justifyContent: 'space-between',
-  alignItems: 'center',
-  marginBottom: '30px',
-  padding: '15px',
-  backgroundColor: '#f9f9f9',
-  borderRadius: '8px',
-  boxShadow: '0 1px 3px rgba(0,0,0,0.1)',
-  flexWrap: 'wrap', // For responsiveness
-  gap: '15px' // Space between items when wrapped
-};
-
-const inputStyle = {
-  padding: '10px',
-  fontSize: '1em',
-  border: '1px solid #ccc',
-  borderRadius: '4px',
-  flexGrow: 1, // Allow search input to take available space
-  minWidth: '200px' // Minimum width for search input
-};
-
-const selectStyle = {
-  padding: '10px',
-  fontSize: '1em',
-  border: '1px solid #ccc',
-  borderRadius: '4px',
-  minWidth: '150px' // Minimum width for select
-};
-
-const productListStyle = {
-  display: 'flex',
-  flexWrap: 'wrap',
-  justifyContent: 'center', // Center items if not filling the row
-  gap: '10px' // Replaces margin on ProductCard for overall layout
-};
-
-const noProductsStyle = {
-  textAlign: 'center',
-  fontSize: '1.2em',
-  color: '#777',
-  marginTop: '50px'
-};
 
 
 function ProductCatalog({ initialProducts }) {

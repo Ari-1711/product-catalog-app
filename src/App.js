@@ -1,4 +1,4 @@
-// src/App.js
+
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import ProductCatalog from './ProductCatalog';
@@ -8,14 +8,14 @@ import { CartProvider } from './context/CartContext';
 import Navbar from './components/Navbar'; 
 import './App.css';
 
-// ... (Impor gambar dan PRODUCTS_DATA Anda tetap sama seperti sebelumnya) ...
+
 import macbookImage from './assets/images/MacBook_Pro_M3.jpg';
 import iphoneImage from './assets/images/iphone_15_pro.jpg';
 import ipadImage from './assets/images/iPad_Air_5.jpg';
 import airpodsImage from './assets/images/AirPods_Pro_2.jpg';
 import dellXpsImage from './assets/images/DELL_XPS_15.jpg';
 import samsungS24Image from './assets/images/Samsung_Galaxy_S24.jpg';
-import sonyWhImage from './assets/images/Sony_WH_1000xm5.jpg'; // Perhatikan 'x' kecil jika nama file Anda seperti itu
+import sonyWhImage from './assets/images/Sony_WH_1000xm5.jpg'; 
 import logitechMxImage from './assets/images/logitech_mx_master_3s.jpg';
 import kindleImage from './assets/images/kindle_paperwhite.jpg';
 

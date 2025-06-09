@@ -1,22 +1,21 @@
-// src/context/CartContext.js
 import React, { createContext, useState, useContext } from 'react';
 
-// 1. Membuat Context
+// Membuat Context
 const CartContext = createContext();
 
-// 2. Membuat Hook kustom untuk menggunakan CartContext (opsional tapi memudahkan)
+// Membuat Hook kustom untuk menggunakan CartContext 
 export const useCart = () => {
   return useContext(CartContext);
 };
 
-// 3. Membuat Provider Component
+// Membuat Provider Component
 export const CartProvider = ({ children }) => {
   const [cartItems, setCartItems] = useState([]); // State untuk menyimpan item di keranjang
 
   // Fungsi untuk menambahkan produk ke keranjang
   const addToCart = (productToAdd) => {
     setCartItems((prevItems) => {
-      // Cek apakah produk sudah ada di keranjang
+      // Mengecek produk sudah ada di keranjang
       const existingItem = prevItems.find(item => item.id === productToAdd.id);
       if (existingItem) {
         // Jika sudah ada, tambahkan quantity-nya
@@ -34,19 +33,19 @@ export const CartProvider = ({ children }) => {
     alert(`${productToAdd.name} berhasil ditambahkan ke keranjang!`);
   };
 
-  // Fungsi untuk menghapus produk dari keranjang (contoh fungsi lain)
+  // Fungsi untuk menghapus produk dari keranjang
   const removeFromCart = (productId) => {
     setCartItems((prevItems) =>
       prevItems.filter(item => item.id !== productId)
     );
   };
 
-  // Fungsi untuk mengupdate kuantitas (contoh fungsi lain)
+  // Fungsi untuk mengupdate kuantitas
   const updateQuantity = (productId, amount) => {
     setCartItems((prevItems) =>
       prevItems.map(item =>
         item.id === productId
-          ? { ...item, quantity: Math.max(0, item.quantity + amount) } // Jangan sampai kurang dari 0
+          ? { ...item, quantity: Math.max(0, item.quantity + amount) } 
           : item
       ).filter(item => item.quantity > 0) // Hapus item jika kuantitasnya 0
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Link } from 'react-router-dom';
-import PropTypes from 'prop-types'; // Impor PropTypes
-import './ProductDetailPage.css'; // Kita akan buat file CSS ini
+import PropTypes from 'prop-types'; 
+import './ProductDetailPage.css'; 
 
 function ProductDetailPage({ products }) {
   const { productId } = useParams();
@@ -24,7 +24,6 @@ function ProductDetailPage({ products }) {
       return <p>Spesifikasi detail belum tersedia.</p>;
     }
     if (typeof specs === 'string') {
-      // Jika specs adalah string, kita bisa membaginya menjadi beberapa baris jika ada newline
       return specs.split('\n').map((line, index) => (
         <p key={index} className="spec-line">{line}</p>
       ));
@@ -45,7 +44,7 @@ function ProductDetailPage({ products }) {
   };
 
   const handleAddToCart = () => {
-    // Logika untuk menambahkan ke keranjang akan ditambahkan di sini nanti
+    // Logika untuk menambahkan ke keranjang akan
     console.log(`Produk ditambahkan ke keranjang: ${product.name} (ID: ${product.id})`);
     alert(`${product.name} ditambahkan ke keranjang! (Fungsi belum sepenuhnya diimplementasikan)`);
   };

@@ -1,11 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // <-- Impor useCart (sesuaikan path)
+import { useCart } from '../context/CartContext'; 
 import './ProductCard.css';
 
 function ProductCard({ product }) {
-  const { addToCart } = useCart(); // <-- Dapatkan fungsi addToCart dari context
+  const { addToCart } = useCart(); 
 
   if (!product) {
     return null;
@@ -14,9 +14,7 @@ function ProductCard({ product }) {
   const handleAddToCartOnCard = (e) => {
     e.preventDefault(); 
     e.stopPropagation();
-    addToCart(product); // <-- Panggil fungsi addToCart dari context dengan data produk
-    // console.log(`(Dari Kartu) Tambah ke keranjang: ${product.name}`); // Sudah ada di addToCart
-    // alert(`${product.name} ditambahkan ke keranjang!`); // Sudah ada di addToCart
+    addToCart(product);
   };
 
   return (

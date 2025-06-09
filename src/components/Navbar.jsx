@@ -1,12 +1,11 @@
-// src/components/Navbar.jsx
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { useCart } from '../context/CartContext'; // Sesuaikan path jika perlu
-import './Navbar.css'; // Kita akan buat file CSS ini
+import { useCart } from '../context/CartContext'; 
+import './Navbar.css'; 
 
 function Navbar() {
   const { itemCount } = useCart();
-   // Dapatkan jumlah item dari CartContext
+
 
   return (
     <nav className="navbar">

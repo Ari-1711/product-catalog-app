@@ -1,95 +1,58 @@
-.product-card {
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  padding: 16px;
-  margin: 10px; /* Diganti oleh 'gap' di parent .product-list-container jika menggunakan flex/grid */
-  width: 280px; /* Atau gunakan flex-basis jika di dalam flex container */
-  background-color: #ffffff;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.08);
-  display: flex;
-  flex-direction: column;
-  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
-  position: relative; /* Untuk positioning absolut jika diperlukan nanti */
-  overflow: hidden; /* Mencegah konten meluap jika ada efek aneh */
+
+
+.catalog {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
 }
 
-.product-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.12);
-}
-
-/* Area yang bisa diklik untuk ke detail produk */
-.product-card-clickable-area {
-  text-decoration: none;
-  color: inherit; /* Mewarisi warna teks dari parent */
-  display: block; /* Agar mengisi ruang */
-  text-align: center; /* Memusatkan gambar dan nama */
-}
-
-.product-image {
-  width: 100%;
-  height: 200px; /* Sesuaikan tinggi gambar sesuai kebutuhan */
-  object-fit: contain; /* 'cover' bisa membuat gambar terpotong, 'contain' menjaga proporsi */
-  border-radius: 6px;
-  margin-bottom: 12px;
-  background-color: #f8f9fa; /* Warna latar jika gambar transparan atau belum load */
-}
-
-.product-name {
-  font-size: 1.2em;
-  font-weight: 600;
-  color: #333;
-  margin: 0 0 8px 0;
-  /* Batasi teks jika terlalu panjang (opsional) */
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.product-info {
-  margin-bottom: 12px;
-  text-align: center; /* Memusatkan kategori dan harga */
-}
-
-.product-category {
-  font-size: 0.85em;
-  color: #757575;
-  margin-bottom: 6px;
-  display: inline-block; /* Agar background tidak full width */
-  background-color: #f0f0f0;
-  padding: 3px 8px;
-  border-radius: 4px;
-}
-
-.product-price {
-  font-size: 1.25em;
-  font-weight: bold;
-  color: #007bff; /* Warna biru untuk harga */
-  margin: 0;
-}
-
-.product-card-add-to-cart-button {
-  background-color: #007bff;
-  color: white;
-  border: none;
-  padding: 10px 15px;
+.catalog-header {
   text-align: center;
-  text-decoration: none;
-  display: block; /* Membuat tombol mengambil lebar penuh */
-  width: 100%;
-  font-size: 0.95em;
-  font-weight: 500;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  margin-top: auto; /* Mendorong tombol ke bagian bawah kartu */
+  color: #333;
+  margin-bottom: 30px;
 }
 
-.product-card-add-to-cart-button:hover {
-  background-color: #0056b3;
+.controls {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  flex-wrap: wrap; 
+  gap: 15px; 
 }
 
-.product-card-add-to-cart-button:focus {
-  outline: none;
-  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+.search-input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  flex-grow: 1; 
+  min-width: 200px; 
+}
+
+.category-select {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  min-width: 150px; 
+}
+
+.product-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; 
+  gap: 10px; 
+}
+
+.no-products {
+  text-align: center;
+  font-size: 1.2em;
+  color: #777;
+  margin-top: 50px;
 }

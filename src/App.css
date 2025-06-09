@@ -1,10 +1,9 @@
-/* Target elemen root dari komponen App Anda */
 .App {
-  text-align: left; /* Default alignment, bisa disesuaikan jika perlu */
-  min-height: 100vh; /* Pastikan aplikasi setidaknya setinggi viewport */
+  text-align: left; 
+  min-height: 100vh; 
   display: flex;
   flex-direction: column;
-  background-color: #f0f2f5; /* Warna latar belakang netral untuk seluruh halaman di luar konten utama */
+  background-color: #f0f2f5; 
 }
 
 
