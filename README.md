@@ -48,6 +48,6 @@ npm install
 npm start
 ```
 
-##Pengembang
+👨‍💻 Pengembang
 **Nama: Ari Hermawan**
 **Email: arihermawan006@email.com**
